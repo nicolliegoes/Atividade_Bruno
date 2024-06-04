@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Nike</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.jpg">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="img/logo2.jpg" alt="Nike Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Homens</a></li>
+                    <li><a href="#">Mulheres</a></li>
+                    <li><a href="#">Crianças</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="titulo-carrinho">Seu Carrinho de Compras</h1>
+        <section class="cart">
+            <div class="cart-item">
+                <img src="img/product1.png" alt="Nike Air Max">
+                <div class="item-details">
+                    <h2>Nike Air Max</h2>
+                    <p class="price">R$ 399,90</p>
+                    <label for="quantity1">Quantidade:</label>
+                    <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                    <button class="remove">Remover</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="img/product2.png" alt="Nike Revolution">
+                <div class="item-details">
+                    <h2>Nike Revolution</h2>
+                    <p class="price">R$ 225,90</p>
+                    <label for="quantity2">Quantidade:</label>
+                    <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                    <button class="remove">Remover</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="img/product3.png" alt="Nike Pegasus">
+                <div class="item-details">
+                    <h2>Nike Pegasus</h2>
+                    <p class="price">R$ 559,90</p>
+                    <label for="quantity3">Quantidade:</label>
+                    <input type="number" id="quantity3" name="quantity3" min="1" value="1">
+                    <button class="remove">Remover</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="img/product4.png" alt="Nike Dunk">
+                <div class="item-details">
+                    <h2>Nike Dunk</h2>
+                    <p class="price">R$ 339,90</p>
+                    <label for="quantity2">Quantidade:</label>
+                    <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                    <button class="remove">Remover</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="img/product5.png" alt="Nike Blazer">
+                <div class="item-details">
+                    <h2>Nike Blazer</h2>
+                    <p class="price">R$ 399,90</p>
+                    <label for="quantity2">Quantidade:</label>
+                    <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                    <button class="remove">Remover</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="img/product6.png" alt="Nike AIr Force">
+                <div class="item-details">
+                    <h2>Nike Revolution</h2>
+                    <p class="price">R$ 559,90</p>
+                    <label for="quantity2">Quantidade:</label>
+                    <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                    <button class="remove">Remover</button>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <h2>Resumo do Pedido</h2>
+                <p>Subtotal: <span class="subtotal">R$ 2485,40</span></p>
+                <button class="checkout">Finalizar Compra</button>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>Nike</p>
+    </footer>
+    <div id="ip-address"></div>
+    <script src="script.js"></script>
+</body>
+</html>
