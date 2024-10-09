@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #323643;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            padding: 20px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        h3{
+            text-align: center;
+            color: #333;
+            font-size: 16px; /* Tamanho menor */
+            font-weight: 300; /* Fonte mais fina */
+            margin: 5px 0;
+        }
+
+        label {
+            display: inline-block;
+            margin: 10px 0 5px;
+            color: #333;
+            width: 70%; /* Ajuste para a largura da label */
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 10px; /* Espaço entre label e input */
+        }
+        .rating input {
+            width: 50px; /* Largura do campo de nota */
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6200ea;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+
+        .espaca{
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Tema</h1>
+    <h3>Turma</h3>
+    <h3>Ods</h3>
+    <div class="espaca"></div>
+
+    <div class="input-group">
+        <label for="integrantes">Integrantes</label>
+        <input type="text" id="integrantes" placeholder="Texto...">
+    </div>
+
+    <div class="input-group">
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" rows="3" placeholder="Texto..."></textarea>
+    </div>
+
+    <div class="espaca"></div>
+    <h2>Avalie o stand 1</h2>
+    <div class="espaca"></div>
+
+    <div class="input-group">
+        <label for="oralidade">Oralidade</label>
+        <input type="number" id="oralidade" min="0" max="10" placeholder="Nota">
+    </div>
+
+    <div class="input-group">
+        <label for="postura">Postura</label>
+        <input type="number" id="postura" min="0" max="10" placeholder="Nota">
+    </div>
+
+    <div class="input-group">
+        <label for="organizacao">Organização</label>
+        <input type="number" id="organizacao" min="0" max="10" placeholder="Nota">
+    </div>
+
+    <div class="input-group">
+        <label for="criatividade">Criatividade</label>
+        <input type="number" id="criatividade" min="0" max="10" placeholder="Nota">
+    </div>
+
+    <div class="input-group">
+        <label for="capricho">Capricho</label>
+        <input type="number" id="capricho" min="0" max="10" placeholder="Nota">
+    </div>
+
+    <div class="input-group">
+        <label for="dominio">Domínio do conteúdo</label>
+        <input type="number" id="dominio" min="0" max="10" placeholder="Nota">
+    </div>
+
+    <div class="input-group">
+        <label for="abordagem">Abordagem do tema</label>
+        <input type="number" id="abordagem" min="0" max="10" placeholder="Nota">
+    </div>
+
+    <div class="input-group">
+        <label for="observacao">Adicione uma observação</label>
+        <textarea id="observacao" rows="4" placeholder="Texto..."></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+</div>
+
+</body>
+</html>
