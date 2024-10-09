@@ -10,6 +10,9 @@
             background-color: #323643;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             background-color: #fff;
@@ -17,6 +20,7 @@
             margin-top: 25%;
             padding: 20px;
             width: 100%;
+            flex: 1;
             box-sizing: border-box; /* Inclui padding e bordas na largura total */
         }
 
@@ -119,6 +123,36 @@
             font-size: 1em;
         }
 
+         /* Styles for the footer */
+         .footer {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+        }
+        .footer-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-icon img {
+            width: 35px;
+            height: 35px;
+        }
+        .footer-icon span {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -210,6 +244,20 @@
     <div class="espaca"></div>
 
     <button type="submit">Enviar</button>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <a href="#" class="footer-icon">
+        <img src="img/icons8-câmera-50.png" alt="Câmera">
+    </a>
+    <a href="#" class="footer-icon">
+        <img src="img/icons8-página-inicial-64.png" alt="Início">
+    </a>
+    <a href="#" class="footer-icon">
+        <img src="img/icons8-livro-64.png" alt="Configurações">
+    </a>
+
 </div>
 
 </body>
