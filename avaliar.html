@@ -30,6 +30,7 @@
             text-align: center;
             color: #333;
             margin: 5px 0;
+            font-size: 25px;
         }
 
         h3{
@@ -49,14 +50,14 @@
         .input-group {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            margin-left: 20%;
         }
         input[type="text"], input[type="number"], textarea {
-            width: 100%;
+            width: 30%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            margin-left: 10px; /* Espaço entre label e input */
+            margin-right: 30%; /* Espaço entre label e input */
         }
         .rating input {
             width: 50px; /* Largura do campo de nota */
@@ -82,15 +83,15 @@
 
         .divider {
             border-bottom: 1px solid #e0e0e0;
-            width: 50%;
+            width: 70%;
             display: inline-block;
-            margin: 10px 0;
-            margin-left: 25%;
+            margin: 5px 0;
+            margin-left: 15%;
         }
 
         .section {
             margin-bottom: 20px;
-            margin-left: 30%;
+            margin-left: 20%;
         }
         .section-title {
             font-size: 1.2em;
@@ -112,7 +113,6 @@
     <h3>Ods</h3>
     <div class="espaca"></div>
 
-    <h2>Informações</h2>
     <div class="divider"></div>
 
     <div class="section">
@@ -129,51 +129,67 @@
 
     <div class="divider"></div>
 
-
-
     <div class="espaca"></div>
     <h2>Avalie o stand 1</h2>
     <div class="espaca"></div>
+
+    <div class="divider"></div>
 
     <div class="input-group">
         <label for="oralidade">Oralidade</label>
         <input type="number" id="oralidade" min="0" max="10" placeholder="Nota">
     </div>
 
+    <div class="divider"></div>
+
     <div class="input-group">
         <label for="postura">Postura</label>
         <input type="number" id="postura" min="0" max="10" placeholder="Nota">
     </div>
+
+    <div class="divider"></div>
 
     <div class="input-group">
         <label for="organizacao">Organização</label>
         <input type="number" id="organizacao" min="0" max="10" placeholder="Nota">
     </div>
 
+    <div class="divider"></div>
+
     <div class="input-group">
         <label for="criatividade">Criatividade</label>
         <input type="number" id="criatividade" min="0" max="10" placeholder="Nota">
     </div>
+
+    <div class="divider"></div>
 
     <div class="input-group">
         <label for="capricho">Capricho</label>
         <input type="number" id="capricho" min="0" max="10" placeholder="Nota">
     </div>
 
+    <div class="divider"></div>
+
     <div class="input-group">
         <label for="dominio">Domínio do conteúdo</label>
         <input type="number" id="dominio" min="0" max="10" placeholder="Nota">
     </div>
+
+    <div class="divider"></div>
 
     <div class="input-group">
         <label for="abordagem">Abordagem do tema</label>
         <input type="number" id="abordagem" min="0" max="10" placeholder="Nota">
     </div>
 
-    <div class="input-group">
+    <div class="divider"></div>
+
+    <div class="section">
         <label for="observacao">Adicione uma observação</label>
         <textarea id="observacao" rows="4" placeholder="Texto..."></textarea>
     </div>
+
+    <div class="divider"></div>
 
     <button type="submit">Enviar</button>
 </div>
