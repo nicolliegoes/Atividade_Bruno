@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2D2E47;
+            color: #ECF0F1;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 190px;
+            height: 190px;
+            margin-bottom: 10px;
+            border: 10px solid #fff; /* Borda na imagem de perfil */
+        }
+        h1 {
+            font-size: 1.7em;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        .email {
+            font-size: 1.2em;
+            color: #BDC3C7;
+        }
+        .info {
+            margin: 10px 0;
+            width: 40%;
+        }
+        .info label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .info span {
+            display: block;
+            padding: 10px;
+            background: rgba(173, 223, 208, 1);
+            color: #2C3E50;
+            border-radius: 10px;
+        }
+        .dual-info {
+            display: flex;
+            justify-content: space-between;
+            width: 40%; /* Para ocupar toda a largura disponível */
+        }
+        .dual-info div {
+            width: 47%; /* Ajustando a largura dos containers */
+        }
+        .dual-info label {
+            font-size: 1.1em; /* Tamanho maior para as labels */
+        }
+
+        .button {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+            align-items: center;
+        }
+        .button a {
+            padding: 10px 15px;
+            background-color: #1ABC9C;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            flex: 1; /* Para dividir igualmente */
+            margin: 0 5px; /* Espaço entre os botões */
+        }
+        .button a:hover {
+            background-color: #16A085;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="profile-header">
+        <img src="img/perfil.jpg" alt="Foto de Perfil">
+        <h1>Fulano da Silva</h1>
+        <span class="email">fulanodasilva@gmail.com</span>
+    </div>
+    <div class="info">
+        <label>Nome completo:</label>
+        <span>Fulano da Silva</span>
+    </div>
+    <div class="info dual-info">
+        <div>
+            <label>Telefone:</label>
+            <span>+55 (11) 96559-5599</span>
+        </div>
+        <div>
+            <label>Data de nascimento:</label>
+            <span>01/01/2000</span>
+        </div>
+    </div>
+    <div class="info dual-info">
+        <div>
+            <label>Cidade:</label>
+            <span>Ribeirão Preto</span>
+        </div>
+        <div>
+            <label>Estado:</label>
+            <span>SP</span>
+        </div>
+    </div>
+    <div class="info dual-info">
+        <div>
+            <label>Possui alguma deficiência?</label>
+            <span>Cognitiva</span>
+        </div>
+        <div>
+            <label>Estado:</label>
+            <span>SP</span>
+        </div>
+    </div>
+    <div class="button">
+        <a href="#">Editar perfil</a>
+        <a href="#">Log out</a>
+    </div>
+</body>
+</html>
